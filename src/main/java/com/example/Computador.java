@@ -3,11 +3,12 @@ package com.example;
 public class Computador extends Jogador{
    @Override
     public boolean parou(){
-        if(getPontos() > 16){
-            return true;
-        }
-        else{ return false;}
-
+        return getPontos() > 16;
     }
     
+    public boolean test(boolean a){
+        if (a) return true;
+        if (!a) return false;
+    }
+
 }
